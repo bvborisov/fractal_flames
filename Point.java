@@ -65,31 +65,5 @@ public static int translateY (Point p, int size)
 	else return (int) Math.round(y); //round
 }
 
-
-public static void main(String[] args)
-{
-Point p = new Point(3.0,4.0);
-System.out.println(p.getX());
-System.out.println(p.getY());
-
-p = p.multiply(1/3.0);
-
-System.out.println(p.getX());
-System.out.println(p.getY());
-
-Point p1 = new Point();
-System.out.println(p1.getX());
-System.out.println(p1.getY());
-
-randomPoint(p1);
-System.out.println(p1.getX());
-System.out.println(p1.getY());
-
-Point p2 = new Point();
-p2.setX(2);
-System.out.println(p2.getX());
-System.out.println(p2.getY());
-
-}
 }
 

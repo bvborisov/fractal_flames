@@ -214,16 +214,5 @@ public final class StdOut {
         out.printf(locale, format, args);
         out.flush();
     }
-
-    // This method is just here to test the class
-    public static void main(String[] args) {
-
-        // write to stdout
-        StdOut.println("Test");
-        StdOut.println(17);
-        StdOut.println(true);
-        StdOut.printf("%.6f\n", 1.0/7.0);
-    }
-
 }
 
