@@ -88,26 +88,26 @@ public class Settings {
 	public static String LINEAR 		= "linear";
 	public static String SINUSOIDAL 	= "sinusoidal";
 	public static String SPHERICAL  	= "spherical";
-	public static String HANDKERCHIEF   = "handkerchief";
+	public static String HANDKERCHIEF   	= "handkerchief";
 	public static String SWIRL  		= "swirl";
 	public static String HORSESHOE  	= "horseshoe";
-	public static String POLAR 			= "polar";
-	public static String SPIRAL			= "spiral";
+	public static String POLAR 		= "polar";
+	public static String SPIRAL		= "spiral";
 	public static String DIAMOND		= "diamond";
-	public static String JULIA			= "julia";
-	public static String WAVES			= "waves";
-	public static String POWER			= "power";
+	public static String JULIA		= "julia";
+	public static String WAVES		= "waves";
+	public static String POWER		= "power";
 	public static String EYEFISH		= "eyefish";
 	public static String CYLINDER		= "cylinder";
-	public static String CROSS			= "cross";
-	public static String HEART 			= "heart";
-	public static String DISK			= "disk";
+	public static String CROSS		= "cross";
+	public static String HEART 		= "heart";
+	public static String DISK		= "disk";
 	public static String HYPERBOLIC		= "hyperbolic";
-	public static String EX				= "ex";
-	public static String BENT			= "bent";
+	public static String EX			= "ex";
+	public static String BENT		= "bent";
 	public static String EXPONENTIAL	= "exponential";
-	public static String COSINE			= "cosine";
-	public static String BUBBLE			= "bubble";
+	public static String COSINE		= "cosine";
+	public static String BUBBLE		= "bubble";
 	public static String PERSPECTIVE	= "perspective";
 			
 	public static String[] Variations 	= {LINEAR,SINUSOIDAL,SPHERICAL,HANDKERCHIEF,SWIRL,HORSESHOE,POLAR,SPIRAL,DIAMOND,JULIA,WAVES,POWER,EYEFISH,CYLINDER,CROSS,HEART,DISK,HYPERBOLIC,EX,BENT,EXPONENTIAL,COSINE,BUBBLE,PERSPECTIVE};
@@ -194,7 +194,6 @@ public class Settings {
 			a[14] = 1.0;
 			return a;
 		}
-		//HEART,DISK,HYPERBOLIC,EX,BENT,EXPONENTIAL,COSINE,BUBBLE,PERSPECTIVE
 		if (Commands.equals(HEART)) 
 		{
 			a[15] = 1.0;
@@ -291,32 +290,4 @@ public class Settings {
 		colors = makeRandomColors(colors.length);
 		size = imageSize;
 	}
-	public static void main(String[] args)
-	{
-		Settings s1 = new Settings(512,1000000,"linear");
-		System.out.println(s1.getMaxIterations());
-		System.out.println(s1.getNumFunctions());
-		for(int i=0;i<s1.getVarWeights().length;i++)
-			System.out.print(s1.getVarWeights()[i] + " ");
-		System.out.println();
-		
-		for(int i=0;i<s1.getNumFunctions();i++)
-			{
-			for(int j=0;j<3;j++)
-				System.out.print(s1.getCx()[i][j] + " ");
-			System.out.println();
-			}
-		for(int i=0;i<s1.getNumFunctions();i++)
-		{
-		for(int j=0;j<3;j++)
-			System.out.print(s1.getCy()[i][j] + " ");
-		System.out.println();
-		}
-		for(int i=0;i<s1.getColors().length;i++)
-			System.out.print(s1.getColors()[i] + " ");
-		System.out.println();
-		System.out.println(s1.getSize());
-		
-
-}
 }
