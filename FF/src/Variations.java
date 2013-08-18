@@ -134,11 +134,4 @@ public class Variations {
 		double p2 = 0.1;
 		return new Point (p2/(p2-p.getY()*Math.sin(p1))*p.getX(),(p2/(p2-p.getY()*Math.sin(p1))*p.getY()*Math.sin(p1)));
 	}
-
-	
-	public static void main(String[] args) {
-		
-
-	}
-
 }

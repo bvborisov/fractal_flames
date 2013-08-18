@@ -1,7 +1,7 @@
 //StdArrayIO.java
 package FF.src;
 
-// Below is the syntax highlighted version of StdArrayIO.java from § Standard Libraries.   Here is the Javadoc. 
+// Below is the syntax highlighted version of StdArrayIO.java from ï¿½ Standard Libraries.   Here is the Javadoc. 
 
 
 
@@ -229,31 +229,8 @@ public class StdArrayIO {
             StdOut.println();
         }
     }
-
-
-   /**
-     * Test client.
-     */
-    public static void main(String[] args) {
-
-        // read and print an array of doubles
-        double[] a = StdArrayIO.readDouble1D();
-        StdArrayIO.print(a);
-        StdOut.println();
-
-        // read and print a matrix of doubles
-        double[][] b = StdArrayIO.readDouble2D();
-        StdArrayIO.print(b);
-        StdOut.println();
-
-        // read and print a matrix of doubles
-        boolean[][] d = StdArrayIO.readBoolean2D();
-        StdArrayIO.print(d);
-        StdOut.println();
-    }
-
 }
 
 
-// Copyright © 2000–2011, Robert Sedgewick and Kevin Wayne. 
+// Copyright ï¿½ 2000ï¿½2011, Robert Sedgewick and Kevin Wayne. 
 // Last updated: Sat Feb 26 10:07:57 EST 2011.
