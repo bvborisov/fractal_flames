@@ -2,7 +2,16 @@ fractal_flames
 ==============
 Fractal Flames git repository, created by Bilyan Borisov.
 
-This is a project in development - to try out the project just compile all the files and and run - the main 
-method is located in FractalFlames.java .
+This is an old project from a first year competition in OO. To try it out, compile all the files in FF.src using
+
+javac *.java
+
+And then go to where FF is included (doing cd .. twice) and then execute 
+
+java FF.src.FractalFlames
+
+From the mini GUI, select image dimension (images are squares, 3000 works okay), number of iterations (the more the better the quality), 
+and pick a type of fractals. The best looking ones are diamond, swirl, disk, and polar, but by all means try them all. 
+Images can also be saved.
 
 
