@@ -2,7 +2,8 @@ fractal_flames
 ==============
 Fractal Flames git repository, created by Bilyan Borisov.
 
-This is an old project from a first year competition in OO. To try it out, compile all the files in FF.src using
+This is an old project from a first year competition in OO. 
+To try it out, compile all the files in FF.src using
 
 javac *.java
 
